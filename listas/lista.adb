@@ -78,6 +78,8 @@ package body lista is
             else
                l.lista:=p.all.sig;
             end if;
+            l.long:=l.long-1;
+            free(p);
          else
             raise claveNoExiste;
          end if;
