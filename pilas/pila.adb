@@ -33,7 +33,6 @@ package body pila is
    -- Postcondiciones: p=P1 y P1 es P sin el elemento del tope
    -- Excepciones: pilaVacia
    procedure desapilar (p: in out tipoPila) is
-      procedure free is new unchecked_deallocation (tipoNodo, tipoPila);
       aux:tipoPila;
       errorenmemoria: exception;
       begin
